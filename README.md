@@ -1,6 +1,6 @@
 # WAGT
 This repository contains the code of 
-[WAGT] Parameter Efficient Tuning for Graph Neural Networks via a Weight Adaptive Module
+[WAGT] Parameter Efficient Tuning for Graph Neural Networks via a Weight Adaptive Module.
 
 ## Environment Setup
 
@@ -15,26 +15,28 @@ pip install rdkit
 pip install PrettyTable
 ```
 
-## Pre-trained models
+## Pre-trained Models
 We use the pre-trained models from paper [*Strategies for Pre-training Graph Neural Networks*](https://github.com/snap-stanford/pretrain-gnns) and 
 [*Simgrace*](https://github.com/mpanpan/SimGRACE). Please refer to the linked Git repositories for detail.
 
 The pre-trained checkpoints that we use are:
 ```infomax.pth masking.pth contextpred.pth edgepred.pth simgrace.pth```
 
-To finetune other pre-trained models, add the checkpoint file under bio/model_gin and chem/model_gin.
+To finetune other pre-trained models, add the checkpoint file under ```./bio/model_gin``` and ```./chem/model_gin```.
 
 ## Dataset
 The datasets for pre-training and downstream tasks utilized in our experiments are from the paper *Strategies for Pre-training Graph Neural Networks*.
 The biology (2.5GB) and chemistry (2GB) datasets can be accessed [here](https://github.com/snap-stanford/pretrain-gnns).
-Download each domain's dataset and unzip under `bio/dataset` and `chem/dataset`
+Download each domain's dataset and unzip under `./bio/dataset` and `./chem/dataset`
 
 ## Run WAGT
 Biology Dataset
-- `cd bio`
-- `bash run.sh`
-
+```
+cd bio
+bash run.sh
+```
 Chemistry Dataset
-Biology Dataset
-- `cd chem`
-- `bash run.sh`
+```
+cd chem
+bash run.sh
+```
