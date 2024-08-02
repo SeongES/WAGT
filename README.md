@@ -20,7 +20,7 @@ We use the pre-trained models from paper [*Strategies for Pre-training Graph Neu
 [*Simgrace*](https://github.com/mpanpan/SimGRACE). Please refer to the linked Git repositories for detail.
 
 The pre-trained checkpoints that we use are:
-```infomax.pth masking.pth contextpred.pth edgepred.pth simgrace.pth'''
+```infomax.pth masking.pth contextpred.pth edgepred.pth simgrace.pth```
 
 To finetune other pre-trained models, add the checkpoint file under bio/model_gin and chem/model_gin.
 
